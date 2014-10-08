@@ -3,7 +3,7 @@ layout: home
 excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
 tags: [Jekyll, theme, responsive, blog, template]
 image:
-  feature: Landsat-543.png
+  feature: Landsat_543.png
   credit: LandsatETM
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
