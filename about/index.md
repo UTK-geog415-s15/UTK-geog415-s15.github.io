@@ -5,8 +5,8 @@ tags: [about, Jekyll, theme, responsive]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
+  feature: Landsat-543.png
+  credit: LandsatETM
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
