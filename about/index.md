@@ -10,6 +10,9 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
+Geography 415 is an introduction to data science for geographers.
+There are no prerequisites for the course.
+
 Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
 
 ## Minimal Mistakes is all about:
