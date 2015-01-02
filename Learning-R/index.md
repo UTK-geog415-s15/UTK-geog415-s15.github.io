@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Learning R
+author: nnagle
 tags: [R]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
