@@ -1,10 +1,10 @@
 ---
 layout: home
 author: nnagle
-excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+excerpt: "Quantitative Methods for Geography"
+tags: []
 image:
   feature: Landsat_543.png
   credit: LandsatETM
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  creditlink: http://landsat.usgs.gov
 ---

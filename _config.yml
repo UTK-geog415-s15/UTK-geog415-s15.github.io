@@ -2,7 +2,8 @@
 
 title:            Geography 415
 locale:           en_US
-url:              http://utk-geog515-s15.github.io
+#url:              http://utk-geog515-s15.github.io
+url:		  http://localhost:4000
 
 
 # Jekyll configuration
