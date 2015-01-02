@@ -1,0 +1,198 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Learning R &#8211; Geography 415</title>
+
+<meta name="keywords" content="R">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Learning R">
+
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://utk-geog415-s15.github.io/images/Landsat_543.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Learning R">
+
+<meta property="og:url" content="http://utk-geog415-s15.github.io/learning-R/">
+<meta property="og:site_name" content="Geography 415">
+
+
+
+
+
+<link rel="canonical" href="http://utk-geog415-s15.github.io/learning-R/">
+<link href="http://utk-geog415-s15.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Geography 415 Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://utk-geog415-s15.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://utk-geog415-s15.github.io/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://utk-geog415-s15.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://utk-geog415-s15.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://utk-geog415-s15.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://utk-geog415-s15.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://utk-geog415-s15.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://utk-geog415-s15.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://utk-geog415-s15.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://utk-geog415-s15.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="page">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://utk-geog415-s15.github.io">Geography 415</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://utk-geog415-s15.github.io/posts/" >Posts</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://utk-geog415-s15.github.io/Learning-R/" >Learning R</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://utk-geog415-s15.github.io/about/" >About</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+  <div class="image-wrap">
+  <img src=
+    
+      "http://utk-geog415-s15.github.io/images/Landsat_543.png"
+    
+  alt="Learning R feature image">
+  
+    <span class="image-credit">Photo Credit: <a href="">LandsatETM</a></span>
+  
+  </div><!-- /.image-wrap -->
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+
+	<img src="http://utk-geog415-s15.github.io/images/bio-photo.jpg" class="bio-photo" alt="Nicholas Nagle bio photo">
+
+<h3>Nicholas Nagle</h3>
+<p>Assistant Professor</p>
+<a href="mailto:nnagle@utk.edu" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+
+
+
+
+
+
+<a href="http://github.com/nnnagle" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+
+
+
+
+
+
+
+  </div>
+  <article class="page">
+    <h1>Learning R</h1>
+    <div class="article-wrap">
+      <h2 id="download-the-software">Download the software</h2>
+<ul>
+  <li><a href="http://www.r-project.com">R Project</a> It all begins with getting the software.</li>
+  <li><a href="http://www.rstudio.com">R Studio</a> The most friendly and flexible way to use R.</li>
+</ul>
+
+<h2 id="general-learning-resources">General Learning Resources</h2>
+<ul>
+  <li>Need help?  Ask a programming question at <a href="http://stackoverflow.com">Stack Overflow</a> (begin searches with the tag [R]) or a stats question at <a href="http://stats.stackexchange.com">Cross Validated</a>.  But chances are, someone has already asked for you!</li>
+  <li>Of course, someone already asked about <a href="http://stats.stackexchange.com/questions/138/resources-for-learning-r">Resources for learning R</a>.</li>
+  <li><a href="http://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf">Short R Intro</a> Short and pretty thorough.  I like it.</li>
+  <li><a href="http://www.cookbook-r.com">Cookbook for R</a></li>
+  <li><a href="http://www.rstudio.com/resources/training/online-learning/#R">R Studio</a></li>
+  <li><a href="http://www.statmethods.net/index.html">Quick-R</a></li>
+  <li><a href="http://www.burns-stat.com/documents/tutorials/impatient-r/">Impatient R</a>.  Even translated into French and Serbo-Croatian! Superbe!  Izvanredan!</li>
+  <li><a href="http://www.r-bloggers.com">Read R bloggers</a> I have all posts sent to my news feed.</li>
+  <li><a href="http://www.ats.ucla.edu/stat/r/">UCLA Institute for Digital Research and Education</a></li>
+</ul>
+
+<h2 id="online-courses-and-modules">Online Courses and Modules</h2>
+<ul>
+  <li><a href="http://tryr.codeschool.com">Try R - O’Reilly</a> You mean I can earn cool badges while I learn R?  Awesome!</li>
+  <li><a href="https://www.datacamp.com/courses/introduction-to-r">Data Camp - Introduction to R</a></li>
+</ul>
+
+    </div><!-- /.article-wrap -->
+    
+  </article>
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    
+
+<span>&copy; 2015 Nicholas Nagle. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://utk-geog415-s15.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://utk-geog415-s15.github.io/assets/js/scripts.min.js"></script>
+
+
+  
+          
+
+</body>
+</html>
