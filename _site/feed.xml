@@ -4,13 +4,145 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://utk-geog415-s15.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://utk-geog415-s15.github.io" />
-<updated>2015-01-02T16:53:41-05:00</updated>
+<updated>2015-01-05T22:13:14-05:00</updated>
 <id>http://utk-geog415-s15.github.io/</id>
 <author>
   <name>Nicholas Nagle</name>
   <uri>http://utk-geog415-s15.github.io/</uri>
   <email>nnagle@utk.edu</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Rstudio Meet Git]]></title>
+  <link rel="alternate" type="text/html" href="http://utk-geog415-s15.github.io/rstudio-meet-git/" />
+  <id>http://utk-geog415-s15.github.io/rstudio-meet-git</id>
+  <published>2015-01-05T00:00:00-05:00</published>
+  <updated>2015-01-05T00:00:00-05:00</updated>
+  <author>
+    <name>Nicholas Nagle</name>
+    <uri>http://utk-geog415-s15.github.io</uri>
+    <email>nnagle@utk.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Stolen from: http://stat545-ubc.github.io/index.html&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You only have to set this up once per machine.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;find-git&quot;&gt;Find Git&lt;/h3&gt;
+
+&lt;p&gt;RStudio can only act as a GUI front-end for Git if &lt;a href=&quot;git01_git-install.html&quot;&gt;Git has been successfully installed&lt;/a&gt; AND RStudio can find it.&lt;/p&gt;
+
+&lt;p&gt;A basic test for successful installation of Git is to simply enter &lt;code&gt;git&lt;/code&gt; in the shell.  You can easily open a shell window from R at &lt;em&gt;Tools &amp;gt; Shell…&lt;/em&gt;. If you get a complaint about Git not being found, it means installation was unsuccessful or that it is not being found, i.e. it is not on your &lt;code&gt;PATH&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are not sure where the Git executable lives, try this in a shell:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code&gt;which git&lt;/code&gt; (Mac, Linux)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code&gt;where git&lt;/code&gt; (most versions of Windows)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code&gt;whereis git.exe&lt;/code&gt; (some other versions of Windows)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If Git appears to be installed and findable, launch RStudio. Quit and re-launch RStudio if there’s &lt;strong&gt;any doubt in your mind&lt;/strong&gt; about whether you opened RStudio before or after installing Git.&lt;/p&gt;
+
+&lt;p&gt;From RStudio, go to &lt;em&gt;Tools &amp;gt; Global Options &amp;gt; Git&lt;/em&gt; and make sure that the box &lt;em&gt;Git executable&lt;/em&gt; points to … the Git executable. It should read something like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code&gt;/usr/bin/git&lt;/code&gt; (Mac, Linux)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I actually had a newer version of git at &lt;code&gt;/usr/local/git/bin/git&lt;/code&gt; (Mac)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code&gt;C:/Program Files (x86)/Git/bin/git.exe&lt;/code&gt; (Windows)&lt;/p&gt;
+
+    &lt;p&gt;Here is a &lt;a href=&quot;http://www.molecularecologist.com/wp-content/uploads/2013/11/Screenshot-2013-11-12-09.53.56-Copy1.png&quot;&gt;screenshot&lt;/a&gt; of someone doing this on a Windows machine.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: On Windows, do &lt;strong&gt;NOT&lt;/strong&gt; use &lt;code&gt;C:/Program Files (x86)/Git/cmd/git.exe&lt;/code&gt;. The difference between the good and bad paths is &lt;code&gt;bin&lt;/code&gt; vs. &lt;code&gt;cmd&lt;/code&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Restart&lt;/strong&gt; RStudio if you made any changes. DO IT.&lt;/p&gt;
+
+&lt;h3 id=&quot;test-the-communication-between-rstudio-and-git&quot;&gt;Test the communication between RStudio and Git&lt;/h3&gt;
+
+&lt;p&gt;We will create a new dummy “Project” and direct RStudio to put it under version control&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Do &lt;code&gt;File &amp;gt; New Project...&lt;/code&gt;. You should see a pop up &lt;a href=&quot;http://www.rstudio.com/images/screenshots/rstudio-projects_new.png&quot;&gt;like this&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Select “New Directory: Start a project in a brand new working directory”.&lt;/li&gt;
+  &lt;li&gt;Select “Empty Project: Create a new project in an empty directory”.&lt;/li&gt;
+  &lt;li&gt;Create a new directory for this project anywhere you wish, perhaps with a name like &lt;code&gt;test&lt;/code&gt;. You can delete this very soon.&lt;/li&gt;
+  &lt;li&gt;If you see a checkbox “Create a git repository”, that is a very good sign! Check it. &lt;strong&gt;If you do not see this checkbox, Git was not successfully installed or RStudio cannot find Git. Restart RStudio, if that doesn’t work, return to the previous section and, perhaps, reinstall Git using a different method that leaves Git in a conventional location.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;After RStudio opens your test Project, the upper right pane should have a “Git” tab, typically along with “Environment”, “History”, etc. You can see an example &lt;a href=&quot;http://www.rstudio.com/images/screenshots/rstudio-vcs.png&quot;&gt;in this screenshot&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;If this has gone well, it looks like Git and RStudio are ready to work together! Feel free to quit RStudio and delete the &lt;code&gt;test&lt;/code&gt; directory/Project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If this has not gone well, here is another thing to try:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;With your Project open, go to &lt;code&gt;Tools &amp;gt; Project Options...&lt;/code&gt;. If available, click on “Git/SVN” and select “Git” in the Version control system dropdown menu. Answer “yes” to the “Confirm New Git Repository” pop up. Answer “yes” to the “Confirm Restart RStudio” pop up.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If none of this works, get help from us.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://utk-geog415-s15.github.io/rstudio-meet-git/&quot;&gt;Rstudio Meet Git&lt;/a&gt; was originally published by Nicholas Nagle at &lt;a href=&quot;http://utk-geog415-s15.github.io&quot;&gt;Geography 415&lt;/a&gt; on January 05, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Assignment 0]]></title>
+  <link rel="alternate" type="text/html" href="http://utk-geog415-s15.github.io/assignment0/" />
+  <id>http://utk-geog415-s15.github.io/assignment0</id>
+  <published>2015-01-05T00:00:00-05:00</published>
+  <updated>2015-01-05T00:00:00-05:00</updated>
+  <author>
+    <name>Nicholas Nagle</name>
+    <uri>http://utk-geog415-s15.github.io</uri>
+    <email>nnagle@utk.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;This tutorial is liberally adapted from the one &lt;a href=&quot;http://stat545-ubc.github.io/block000_r-rstudio-install.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-r&quot;&gt;Installing R&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Install &lt;a href=&quot;http://www.r-project.org&quot;&gt;R, a free software environment for statistical computing and graphics&lt;/a&gt;.  Once you install R, make sure it opens up smoothly.  Once you’ve done this, you shouldn’t have to access R directly again during this class.&lt;/li&gt;
+  &lt;li&gt;Install &lt;a href=&quot;http://www.rstudio.com&quot;&gt;Rstudio, a powerful and productive user interface for R that is free&lt;/a&gt;. Follow the links to the open source desktop version.  You might even check out the &lt;a href=&quot;http://www.rstudio.com/products/rstudio/download/preview/&quot;&gt;Preview Version&lt;/a&gt;, which includes all kind of neat stuff, such as the ability to create MS Word notebooks (if that floats your boat.  It doesn’t float mine.  I still use the Preview Version because of all the other cool stuff).  Rstudio provides really helpful tools like a text editor, a data browsers.  Rstudio can also integrate with Github, however it can’t do all Github tasks, so you’ll still need to install Github (described below).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Test it:
+ - Fire up Rstudio.
+ - Writing code is like any other writing process: there is way more drafting than there is final writing.  Put your cursor in the “Console Window.”  I treat the Console window like a “drafting” book.  It’s where I sketch out ideas, and R lets me know if she understands them.  Type something like:
+ &lt;code&gt;r
+ x &amp;lt;- 2+4
+&lt;/code&gt;
+Now inspect the &lt;code&gt;x&lt;/code&gt; object by typing &lt;code&gt;x&lt;/code&gt; followed by return.&lt;/p&gt;
+
+&lt;p&gt;You’re a coder!&lt;/p&gt;
+
+&lt;p&gt;Rstudio has help topics &lt;a href=&quot;https://support.rstudio.com/hc/en-us/categories/200035113-Documentation&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-github&quot;&gt;Installing Github&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Register for a free github account.  You can either go the &lt;a href=&quot;https://github.com&quot;&gt;public way&lt;/a&gt; or the &lt;a href=&quot;https://education.github.com&quot;&gt;education way&lt;/a&gt;.  Pick a username that won’t embarrass you in a few years.  The public way gives you unlimited public &lt;em&gt;repositories&lt;/em&gt; (For now, you can think of a repository as a “project”).  You have to pay for private projects (repositories).  The student account gives you a small number of private repositories for free.  In this class we’ll use public repositories, because it’s important for you learn about sharing and attribution.  (&lt;a href=&quot;http://www.bitbucket.org&quot;&gt;Bitbucket&lt;/a&gt; is a competitor to github that I have also used.  Bitbucket gives academic users free public repositories.  Yay!  Just sayin.)&lt;/li&gt;
+  &lt;li&gt;(Recommended, but optional)  Install a git client.  I’ve used both &lt;a href=&quot;http://www.sourcetreeapp.com&quot;&gt;SourceTree&lt;/a&gt; and the Github client for &lt;a href=&quot;http://windows.github.com&quot;&gt;Windows&lt;/a&gt; and &lt;a href=&quot;http://mac.github.com&quot;&gt;Mac&lt;/a&gt;.    I’ve used both Mac programs.  Sourctree is a little more full-features, but Github may be simpler for a first-timer.  A Git client is to Git what Rstudio is to R.  It makes life a little easier.  But Git isn’t as tricky as R, so that’s why I have this as optional.&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://utk-geog415-s15.github.io/assignment0/&quot;&gt;Assignment 0&lt;/a&gt; was originally published by Nicholas Nagle at &lt;a href=&quot;http://utk-geog415-s15.github.io&quot;&gt;Geography 415&lt;/a&gt; on January 05, 2015.&lt;/p&gt;</content>
+</entry>
 
 
   
