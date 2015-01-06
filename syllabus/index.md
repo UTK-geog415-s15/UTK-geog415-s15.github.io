@@ -12,45 +12,45 @@ image:
 date   | Topic                               | Reading
 ------ | ----------------------------------- |
 Jan 08 | Introductions |
-Jan 12 | *Lab: Intro to R, Rstudio and Git* |
+Jan 12 | *Lab 0: Intro to R, Rstudio and Git* |
 Jan 13 | How a statistician views the world  |
 Jan 15 | Distributions |
 Jan 19 | *MLK: No lab* |
 Jan 20 | Means, variances and all that |
 Jan 22 | Models & estimation |
-Jan 26 | *Lab: More R intro & Fun with ggplot* |
+Jan 26 | *Lab 1: More R intro & Fun with ggplot* |
 Jan 27 |  Correlation and Bivariate Regression |
 Jan 29 | More Bivariate Regression |
 Feb 2 | *Lab: Bivariate Regression* |
-Feb 3 | Central Limit Theorem |
+Feb 3 |  More regression|
 Feb 5 | |
-Feb 9 | *Lab: CLT and simulation* |
-Feb 10  | Hypothesis Testing |
-Feb 12  | More Hypothesis Testing |
-Feb 16 | *Lab: Hypothesis Testing* |
-Feb 17 | |
-Feb 19 | |
-Feb 23 | |
+Feb 9 | *Lab 2: More regression* |
+Feb 10  | Central Limit Theorem |
+Feb 12  |  |
+Feb 16 | *Lab 3: CLT and simulation* |
+Feb 17 | Hypothesis Testing |
+Feb 19 | More hyopthesis Testing |
+Feb 23 | *Lab 4: Hypothesis Testing* |
 Feb 24 | |
-Feb 26 | |
-Mar 2 | *Lab: * |
-Mar 3 | |
+Feb 26 | Mid Term|
+Mar 2 | *No Lab* |
+Mar 3 | Multivariate Regression & ANOVA |
 Mar 5 | |
-Mar 9 | *Lab: * |
-Mar 10 | |
+Mar 9 | *Lab 5: Regression* |
+Mar 10 | Multivariate Regression: Confounding|
 Mar 12 | |
-Mar 23 | *Lab: * |
-Mar 24 | |
+Mar 23 | *Lab 6: Regression* |
+Mar 24 | Multivariate Regression: Assumptions and Diagnostics|
 Mar 25 | |
-Mar 30 | *Lab: * |
-Mar 31 | |
+Mar 30 | *Lab 7: Regression Diagnostics* |
+Mar 31 | Nonlinear Regression and Supervised Classification |
 Apr 2 | |
-Apr 6 | *Lab: * |
-Apr 7 | |
+Apr 6 | *Lab 8: Classification* |
+Apr 7 | Time Series |
 Apr 9 | |
-Apr 13 | *Lab: * |
-Apr 14 | |
+Apr 13 | *Lab 9: Time Series* |
+Apr 14 | Spatial Autocorrelation |
 Apr 16 | |
-Apr 20 | AAG |
+Apr 20 | *Lab 10: Moran's I and Spatial Autocorrelation |
 Apr 21 | AAG |
 Apr 23 | AAG |
