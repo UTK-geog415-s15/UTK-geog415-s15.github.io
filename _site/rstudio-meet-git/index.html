@@ -1,4 +1,146 @@
-<p>Stolen from: http://stat545-ubc.github.io/index.html</p>
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Rstudio meet git &#8211; Geography 415</title>
+<meta name="description" content="Intro to R, Rstudio, and Github">
+<meta name="keywords" content="assignment">
+
+  
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Rstudio meet git">
+<meta name="twitter:description" content="Intro to R, Rstudio, and Github">
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://utk-geog415-s15.github.io/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rstudio meet git">
+<meta property="og:description" content="Intro to R, Rstudio, and Github">
+<meta property="og:url" content="http://utk-geog415-s15.github.io/rstudio-meet-git/">
+<meta property="og:site_name" content="Geography 415">
+
+
+
+
+
+<link rel="canonical" href="http://utk-geog415-s15.github.io/rstudio-meet-git/">
+<link href="http://utk-geog415-s15.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Geography 415 Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://utk-geog415-s15.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://utk-geog415-s15.github.io/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://utk-geog415-s15.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://utk-geog415-s15.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://utk-geog415-s15.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://utk-geog415-s15.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://utk-geog415-s15.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://utk-geog415-s15.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://utk-geog415-s15.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://utk-geog415-s15.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://utk-geog415-s15.github.io">Geography 415</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://utk-geog415-s15.github.io/posts/" >Posts</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://utk-geog415-s15.github.io/Learning-R/" >Learning R</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://utk-geog415-s15.github.io/about/" >About</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+  
+
+
+	<img src="http://utk-geog415-s15.github.io/images/nagle-bio-photo.jpg" class="bio-photo" alt="Nicholas Nagle bio photo">
+
+<h3>Nicholas Nagle</h3>
+<p>Please take a moment now to locate your nearest exit.</p>
+<a href="mailto:nnagle@utk.edu" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+
+
+
+
+
+
+<a href="http://github.com/nnnagle" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+
+
+
+
+
+
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="http://utk-geog415-s15.github.io/rstudio-meet-git/" rel="bookmark" title="Rstudio meet git">Rstudio meet git</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p>Stolen from: http://stat545-ubc.github.io/index.html</p>
 
 <p><strong>You only have to set this up once per machine.</strong></p>
 
@@ -67,3 +209,66 @@
 </ul>
 
 <p>If none of this works, get help from us.</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+  
+
+
+	<img src="http://utk-geog415-s15.github.io/images/nagle-bio-photo.jpg" class="bio-photo" alt="Nicholas Nagle bio photo">
+
+<h3>Nicholas Nagle</h3>
+<p>Please take a moment now to locate your nearest exit.</p>
+<a href="mailto:nnagle@utk.edu" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+
+
+
+
+
+
+<a href="http://github.com/nnnagle" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+
+
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>Rstudio meet git</strong> was published on <time datetime="2015-01-05T00:00:00-05:00">January 05, 2015</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://utk-geog415-s15.github.io/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://utk-geog415-s15.github.io/assignment0/" title="Assignment 0">Assignment 0</a></li>
+    
+      <li><a href="http://utk-geog415-s15.github.io/first-post/" title="first post">first post</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2015 Nicholas Nagle. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://utk-geog415-s15.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://utk-geog415-s15.github.io/assets/js/scripts.min.js"></script>
+
+	        
+
+</body>
+</html>

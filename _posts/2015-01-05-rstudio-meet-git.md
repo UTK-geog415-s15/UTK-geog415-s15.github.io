@@ -6,6 +6,7 @@ modified:
 excerpt: "Intro to R, Rstudio, and Github"
 tags: [assignment]
 ---
+
 Stolen from: http://stat545-ubc.github.io/index.html
 
 **You only have to set this up once per machine.**
