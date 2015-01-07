@@ -11,6 +11,7 @@ image:
 
 
 ## Find your sherpas
+
 #### Instructor
 Nicholas Nagle, Assistant Professor
 
@@ -35,6 +36,7 @@ Email: <lstachow@vols.utk.edu>
 
 
 ## Find the basecamp
+
 #### Lecture
 Location: BGB 101
 
@@ -46,6 +48,7 @@ Location: BGB 202
 Time: Monday 1:25-3:20 OR 3:35-5:30
 
 ## Gear to bring
+
 #### Textbooks
 **Required** Peter Rogerson, *Statistical Methods for Geographers*.  Sage Press. 2010.
 
@@ -60,6 +63,7 @@ You will need to bring to lab either:
 I strongly strongly strongly recommend that your bring your own laptop to lab.  This will give you the most control over your software and help to ease the transition between the classroom and home.
 
 ## The Destination
+
 #### Course Overview
 This course is about data analysis in geography.  We will learn about how models and data are used to learn about our world.
 
@@ -72,11 +76,12 @@ This course is about data analysis in geography.  We will learn about how models
 #### How you can make sure you arrive safely
 Of course, there is the obvious: come to class prepared, having completed the reading for that segment and completed lab assigments.  Beyond that, the most important element of of student success in quantitative methods is take control and to constantly self-assess your understanding by asking "Why is this material important?  The professor obviously thinks this is important, why is that?"  If, at any point, for any topic, you are unable to answer this question, then you need to ask questions in class until you understand.
 
-## Methods of Instruction
+#### Methods of Instruction
 This course has lecture and computer lab components.  The lecture component will occasionally include question and answering, discussion, and individual and group problem solving.  The computer lab will introduce students to the R statistical software and allow students to explore techniques.  Lab exercises will often be discussed in lecture.
 
 
 ## Grade Distribution
+
 #### Undergraduates
 - Lab assignments/Homework: 50%  Homework will be assigned during the lab sections.  Homework assignments are usually due one week after being assigned, however, some may have extended due dates.
 - Midterm exam:  25%
