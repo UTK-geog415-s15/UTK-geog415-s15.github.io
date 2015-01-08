@@ -9,6 +9,21 @@ tags: [assignment]
 
 This tutorial is liberally adapted from the one [here](http://stat545-ubc.github.io/block000_r-rstudio-install.html).
 
+## Objective
+ - Get your computer setup with R, Rstudio, and Git.
+This combination will prepare you for powerful quantitative analysis that is both well archived and reproducible.  In other words, for quantitative analysis that is scientific.
+
+## Outline
+ 1. Install R.
+ 2. Install Rstudio.
+ 3. Test
+ 4. Install git
+ 5. Make sure that Rstudio and git are on first name basis
+ 6. Clone the assignment repository.
+ 7. Makes some changes (as explained in the archive's readme.md file).
+ 8. Push it back.
+
+
 ## Installing R
 
  - Install [R, a free software environment for statistical computing and graphics](http://www.r-project.org).  Once you install R, make sure it opens up smoothly.  Once you've done this, you shouldn't have to access R directly again during this class.
