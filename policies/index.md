@@ -92,12 +92,6 @@ This course has lecture and computer lab components.  The lecture component will
  - Final Exam: 20%
  - Final Project: 30%
 
-## Letter Grade Assignment
-
-letter  | undergraduate  | graduate
-------- | -------------- | ---------
-A       | [93-100]       | [95-100]
-A-      | [90-93)        | [92-95)
 
 
 ## Participation and Attendance
