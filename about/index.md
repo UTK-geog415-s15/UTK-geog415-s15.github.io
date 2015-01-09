@@ -6,8 +6,9 @@ tags: []
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
-  feature: Landsat_543.png
+  feature: Landsat_543-960-200.png
   credit: LandsatETM
+  creditlink: http://landsat.usgs.gov
 ---
 
 Geography 415 is an introduction to data science and quantitative methods for geographers.
