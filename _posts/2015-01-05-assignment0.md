@@ -38,7 +38,7 @@ Test it:
 
  - Fire up Rstudio.
  - Writing code is like any other writing process: there is way more drafting than there is final writing.  Put your cursor in the "Console Window."  I treat the Console window like a "drafting" book.  It's where I sketch out ideas, and R lets me know if she understands them.  Type something like:
- ```r
+ ```
  x <- 2+4
  ```
 Now inspect the `x` object by typing `x` followed by return.  
@@ -50,11 +50,11 @@ Rstudio has a [page for help topics](https://support.rstudio.com/hc/en-us/catego
 ## <a name='installing-github'>Installing Github</a>
 
 - Register for a free github account.  You can either go the [public way](https://github.com) or the [education way](https://education.github.com).  Either works for this class.  Pick a username that won't embarrass you in a few years.  Both ways give you unlimited public *repositories* (For now, you can think of a repository as a "project").  The student account gives you a small number of private repositories, which you would normally have to pay for.  In this class we'll use public repositories because it's important for you learn about sharing and attribution.  ([Bitbucket](http://www.bitbucket.org) is a competitor to github that I have also used.  Bitbucket gives academic users free public repositories.  Yay!  Just sayin.)
-- Install a git client.  I recommend either the Github client ([Windows](http://windows.github.com) and [Mac](http://mac.github.com)).    A Git client is to Git what Rstudio is to R.  It makes life a little easier.
+- Install a git client.  I recommend either the Github client ([Windows](http://windows.github.com) and [Mac](http://mac.github.com)).    A Git client is to Git what Rstudio is to R.  It makes life a little easier.  To be honest, I don't use the desktop client much.  I much prefer the shell.  If you're a Mac user, the command line version of git comes out of the box.  If you're a Windows user, installing github will also make sure that you have  git.
 
 ## <a name='setting-up-git'>Setting up git for the first time.</a>
 - The first time using git can be a pain.  ASFAIK, you can not use git for the first time in Rstudio.  Rstudio expects that git is already set up.  You should use github to initialize git.
-- When you first setup Github (if that's what you go with), it will ask you for your git username and email. Do this.  You should be good to go!
+- When you first run the Github client (if that's what you go with), it will ask you for your git username and email. Do this.  You should be good to go!
 
 ## <a name='setting-up-workspace'>Setting up your class workspace</a>
 For this class, you will maintain a repository with your assignments.  When you want help (and you will want help at some point), you can share your repository with the TA or me, and we see exactly what is happening.
@@ -65,7 +65,7 @@ You will have two repositories.  One which belongs to you, and where you do all 
 - Go here to the [class github page] (https://github.com/UTK-geog415-s15).
 - Find the repository with your netid and click to open it up.
 - The repository is nearly empty, the only thing there is an empty README.md file.
-- In the upper right, click the `Fork...` button.  "It should only take a few seconds."  You will now have a copy of the repository in your own github home.  The windows browser will probably have ejected you from the class account to your own account.  You should see you own version of the repository now.  There are now two copies of the repository, one called `UTK-geog415_s15/netid` which belong to me, and one called `[your user name]/netid` which belongs to you.
+- In the upper right, click the `Fork...` button.  "It should only take a few seconds."  You will now have a copy of the repository in your own github home.  The windows browser will probably have ejected you from the class account to your own account.  You should see you own version of the repository now.  There are now two copies of the repository, one called `UTK-geog415_s15/netid` which belongs to me, and one called `[your user name]/netid` which belongs to you.
 
 You will do all of your homework on **your** repository, and when you are ready to submit your homework, you will send me a *Pull Request* so that I can save it on the **class** repository.  This is what I will grade.
 
@@ -75,6 +75,10 @@ The repository is now on your github account but it isn’t on you computer.  Th
 - Make sure your computer can find git.  type something like `git --version`
 - If you have trouble, then it’s probably the case that git is somewhere unusual on your computer.  Look [here](http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/) for help.  On Windows 8 I had to click `Tools -> Global Options -> Git/SVN` and then tell it where Git ended up.  Here's how I found where git ended up: On the Windows desktop, github created a "git shell"  Open that up, and type: `(get-command git).Path`.  It will return the location of git.exe.  It was a pretty crazy filename.  Enter that filename, and then restart Rstudio.
 
+Once Rstudio can find git, you have to clone your repository on your computer.  You can either do this through Rstudio or through a command line shell.  Both are covered here.  *It is very important that you clone the repository from your github account, and not the repository from the class account*
+
+For both methods, you will need the "ssh address" of your repository.  From the github webpage for your repository, find on the right where you see the url address.  By default it shows the https address.  *You must use the ssh address* if you are to work in R (which you are).  Change that to the ssh address, and copy the url to your clipboard.
+
 ### Method A: Clone in Rstudio
 - In R, select `File -> New Project… -> Version Control -> Git`
 - Paste in the ssh url (it’s still in your clipboard, right?)
@@ -83,16 +87,16 @@ The repository is now on your github account but it isn’t on you computer.  Th
 - Select Create Project
 
 ### Method B: Clone from the shell
-- Inside the shell, browse over to where you want to put your directory.
-For example, on a Mac, you might do something like: `cd ~/Documents/`
+- Inside a shell, browse over to where you want to put your directory.
+For example, on a Mac, you might browse with something like: `cd ~/Documents/`
 On a PC, you might do something like: `cd C:\Users\username\`
 - Now, clone your file. Hopefully that ssh url is still in your clipboard, if so, then enter
 `git clone ssh.url`
 
 Hopefully that worked.  
-Now, back in R, select File -> New Project… -> Existing Directory
+Now, back in R, select `File -> New Project… -> Existing Directory`
 and choose your github folder (the one with your netid) as the directory.
-Select Create Project.
+Select `Create Project.`
 
 
 You now have R and Git setup.  yay!!  Give yourself a pat on the back, crack your knuckles and we can get started with the assignment :)
@@ -102,14 +106,14 @@ You now have R and Git setup.  yay!!  Give yourself a pat on the back, crack you
  
  Edit your README.md file and write a short bio about yourself.  You can edit it from within R, or using any text editor (like notepad or textedit).  Tell me a bit about your background.  Maybe something about your academic and career goals?  Maybe something memorable about you?  Maybe you love to write haiku?  It’s your space.  Do with it as you wish.
 
- When you are done with your bio, *commit* your work to the repository.  Even if your text edit has autosave, commit is different.  Commit is like taking a snapshot.  You can always return to the state of a repository at a commit snapshot, even if you later change or delete your file.
+ When you are done with your bio, 1) save it using whatever text editor you are using, and 2) *commit* your work to the repository.  Even if your text edit has autosave, commit is different.  Commit is like taking a snapshot.  You can always return to the state of a repository at a commit snapshot, even if you later change or delete your file.
 
 
 #### Commit - Method A: In R
 
  - In R Click `Git -> Commit`
  - In the upper left, you will see a window of every file that has changed.  Some files are new and should be added, some files are modified and should be checked in.  Select the box next to each file to approve the change.  The files are now
- *staged* to be committed.  You need to write a short message describing the commit.  Something like “added bio to README.md."
+ *staged* to be committed.  If you do not stage a file, then it will remain on your computer, but it will not be uploaded to your reposotory and git will not track changes to it.  Next, with every commit, you need to write a short message describing the commit.  Something like “added bio to README.md."  Git won't let you commit without a message.
  - Click Commit.
 
  You made the snapshot, but it is still on your computer and not on your github.  You need to “push it” to your github repository.  Click the `push ` button.
@@ -120,17 +124,18 @@ You now have R and Git setup.  yay!!  Give yourself a pat on the back, crack you
 
  - Type `git status`
  This will tell you what needs to be staged.
- - Enter `git commit -a -m 'helpful meesge explaining what you did'`
- - Enter `git push`  (If that doesn't work try `git push origin master`, and enter you username and password if prompted)
+ - Enter `git commit -a -m 'helpful message explaining what you did'`
+ - Enter `git push`  (If that doesn't work try `git push origin master`, and enter your username and password if prompted)
 
 
  ### Turn it in
  
- When you’re ready to turn your homework in:
- On the right, click `Pull Requests` -> `Create  pull request.`  
+ - When you’re ready to turn your homework in, then go to your own github repository online.  Make sure it is up to date.  (Have you pushed everything from your computer?)
+ - On the right, click `Pull Requests` -> `Create  pull request.`  
  You’ll see a page which shows all of the differences between your version of the repository and my version of the repository.  Just click once again on `Create Pull Request.`  You can create a message for the pull request.  Something helpful like "[your netid] Homework 0” would be great.
 
  Click yet once again on Create Pull Request.
+ 
  I’ll automatically get a message telling me that you want me to load your repository.  You can view it on the class repository if you want, to make sure it worked.  You’re done.  Now my work begins :)
 
 
