@@ -73,7 +73,7 @@ The repository is now on your github account but it isn’t on you computer.  Th
 
 - Open up a terminal or command console.  The easiest way is to open Rstudio, and then click `Tools -> Shell...`.
 - Make sure your computer can find git.  type something like `git --version`
-- If you have trouble, then it’s probably the case that git is somewhere unusual on your computer.  Look [here](http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/) for help.
+- If you have trouble, then it’s probably the case that git is somewhere unusual on your computer.  Look [here](http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/) for help.  On Windows 8 I had to click `Tools -> Global Options -> Git/SVN` and then tell it where Git ended up.  Here's how I found where git ended up: On the Windows desktop, github created a "git shell"  Open that up, and type: `(get-command git).Path`.  It will return the location of git.exe.  It was a pretty crazy filename.  Enter that filename, and then restart Rstudio.
 
 ### Method A: Clone in Rstudio
 - In R, select `File -> New Project… -> Version Control -> Git`
