@@ -68,20 +68,20 @@ You will have two repositories.  One which belongs to you, and where you do all 
 
 You will do all of your homework on **your** repository, and when you are ready to submit your homework, you will send me a *Pull Request* so that I can save it on the **class** repository.  This is what I will grade.
 
-The repository is now on your github account, but it isn’t on you computer.  The first time only, you need to *clone* it to your computer.
+The repository is now on your github account but it isn’t on you computer.  The first time only, you need to *clone* it to your computer.
 
 - Open up a terminal or command console.  The easiest way is to open Rstudio, and then click `Tools -> Shell...`.
-- Make sure your computer can find git.  type something like `git —version`
-- If you have trouble, the it’s probably the case that git is somewhere unusual.  Look [here](http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/) for help.
+- Make sure your computer can find git.  type something like `git --version`
+- If you have trouble, then it’s probably the case that git is somewhere unusual on your computer.  Look [here](http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/) for help.
 
-### Method A
+### Method A: Clone in Rstudio
 - In R, select `File -> New Project… -> Version Control -> Git`
 - Paste in the ssh url (it’s still in your clipboard, right?)
 - It will probably automatically select your net id as the Project directory name.
 - Choose the location on your computer where you want to put this folder.
 - Select Create Project
 
-### Method B
+### Method B: Clone from the shell
 - Inside the shell, browse over to where you want to put your directory.
 For example, on a Mac, you might do something like: `cd ~/Documents/`
 On a PC, you might do something like: `cd C:\Users\username\`
@@ -92,3 +92,45 @@ Hopefully that worked.
 Now, back in R, select File -> New Project… -> Existing Directory
 and choose your github folder (the one with your netid) as the directory.
 Select Create Project.
+
+
+You now have R and Git setup.  yay!!  Give yourself a pat on the back, crack your knuckles and we can get started with the assignment :)
+
+
+ ## Homework 0:
+ 
+ Edit your README.md file and write a short bio about yourself.  You can edit it from within R, or using any text editor (like notepad or textedit).  Tell me a bit about your background.  Maybe something about your academic and career goals?  Maybe something memorable about you?  Maybe you love to write haiku?  It’s your space.  Do with it as you wish.
+
+ When you are done with your bio, *commit* your work to the repository.  Even if your text edit has autosave, commit is different.  Commit is like taking a snapshot.  You can always return to the state of a repository at a commit snapshot, even if you later change or delete your file.
+
+
+#### Commit - Method A: In R
+
+ - In R Click `Git -> Commit`
+ - In the upper left, you will see a window of every file that has changed.  Some files are new and should be added, some files are modified and should be checked in.  Select the box next to each file to approve the change.  The files are now
+ *staged* to be committed.  You need to write a short message describing the commit.  Something like “added bio to README.md."
+ - Click Commit.
+
+ You made the snapshot, but it is still on your computer and not on your github.  You need to “push it” to your github repository.  Click the `push ` button.
+
+ That’s it.  Every so often, remember to commit your changes and push them to the github repository.
+
+#### Commit - Method B: In the shell
+
+ - Type `git status`
+ This will tell you what needs to be staged.
+ - Enter `git commit -a -m 'helpful meesge explaining what you did'`
+ - Enter `git push`  (If that doesn't work try `git push origin master`, and enter you username and password if prompted)
+
+
+ ### Turn it in
+ 
+ When you’re ready to turn your homework in:
+ On the right, click `Pull Requests` -> `Create  pull request.`  
+ You’ll see a page which shows all of the differences between your version of the repository and my version of the repository.  Just click once again on `Create Pull Request.`  You can create a message for the pull request.  Something helpful like "[your netid] Homework 0” would be great.
+
+ Click yet once again on Create Pull Request.
+ I’ll automatically get a message telling me that you want me to load your repository.  You can view it on the class repository if you want, to make sure it worked.  You’re done.  Now my work begins :)
+
+
+
