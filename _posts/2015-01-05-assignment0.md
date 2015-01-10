@@ -63,7 +63,7 @@ When you want to turn in your homework, you just copy your work to our repositor
 
 You will have two repositories.  One which belongs to you, and where you do all your work, and one which belongs to the TA and myself, which is where you submit your work when you are done.  I've already created my repository.
 - Go here to the [class github page] (https://github.com/UTK-geog415-s15).
-- Find repository with your netid and click to open it up.
+- Find the repository with your netid and click to open it up.
 - The repository is nearly empty, the only thing there is an empty README.md file.
 - In the upper right, click the `Fork...` button.  "It should only take a few seconds."  You will now have a copy of the repository in your own github home.  The windows browser will probably have ejected you from the class account to your own account.  You should see you own version of the repository now.  There are now two copies of the repository, one called `UTK-geog415_s15/netid` which belong to me, and one called `[your user name]/netid` which belongs to you.
 
