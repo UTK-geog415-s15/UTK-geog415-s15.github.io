@@ -2,6 +2,7 @@
 layout: post
 title: "Assignment 0"
 author: nnagle
+draft: true
 modified:
 excerpt: "Intro to R, Rstudio, and Github"
 tags: [assignment]
