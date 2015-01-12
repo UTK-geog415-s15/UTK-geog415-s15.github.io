@@ -16,6 +16,10 @@ This tutorial is liberally adapted from the one [here](http://stat545-ubc.github
  - [Installing Github](#installing-github)
  - [Setting Up Git for the first time](#setting-up-git)
  - [Setting up your class workspace](#setting-up-workspace)
+ - [Clone your repository to your computer](#clone)
+ - [Homework 0](#homework-0)
+ - [Turn it in usng a pull request](#turn-it-in)
+
 
 
 ## <a name='why-r'>Why R?</a>
@@ -57,17 +61,18 @@ Rstudio has a [page for help topics](https://support.rstudio.com/hc/en-us/catego
 - When you first run the Github client (if that's what you go with), it will ask you for your git username and email. Do this.  You should be good to go!
 
 ## <a name='setting-up-workspace'>Setting up your class workspace</a>
+
 For this class, you will maintain a repository with your assignments.  When you want help (and you will want help at some point), you can share your repository with the TA or me, and we see exactly what is happening.
 
-When you want to turn in your homework, you just copy your work to our repository.  Again, we can see what you did.  No emails to get lost.  Additionally, you can see what your colleagues are doing.  I think this is a good thing.  As long as you give credit where credit is due.  If you think you deserve mad props for someone's work let us know.
+When you want to turn in your homework, you just ask us to copy everything from your repository to our repository.  Again, we can see what you did.  No emails to get lost.  Additionally, you can see what your colleagues are doing.  I think this is a good thing.  As long as you give credit where credit is due.  If you someone else copied your work and didn't give you mad props then let us know.  We all stand on the shoulders of giants.  Some giants may be in this class.  That is okay, just acknowledge it.
 
-You will have two repositories.  One which belongs to you, and where you do all your work, and one which belongs to the TA and myself, which is where you submit your work when you are done.  I've already created my repository.
+You will have two repositories.  One which belongs to you, and where you do all your work, and one which belongs to the TA and myself, which is where you submit your work when you are done.  I've already created you repository that belongs to me.
 - Go here to the [class github page] (https://github.com/UTK-geog415-s15).
-- Find the repository with your netid and click to open it up.
+- Find the repository with your netid and click to open it up.  This is my repository.  Your final homework will show up here after you follow the instructions in this assignment.
 - The repository is nearly empty, the only thing there is an empty README.md file.
-- In the upper right, click the `Fork...` button.  "It should only take a few seconds."  You will now have a copy of the repository in your own github home.  The windows browser will probably have ejected you from the class account to your own account.  You should see you own version of the repository now.  There are now two copies of the repository, one called `UTK-geog415_s15/netid` which belongs to me, and one called `[your user name]/netid` which belongs to you.
+- In the upper right, click the `Fork...` button.  "It should only take a few seconds."  You will now have a copy of the repository in your own github account.  The windows browser will probably have ejected you from the class account to your own account.  You should see your own version of the repository now.  There are now two copies of the repository, one called `UTK-geog415_s15/[your netid]` which belongs to me, and one called `[your user name]/[your netid]` which belongs to you.
 
-You will do all of your homework on **your** repository, and when you are ready to submit your homework, you will send me a *Pull Request* so that I can save it on the **class** repository.  This is what I will grade.
+You will do all of your homework on **your** repository, and when you are ready to submit your homework, you will send me a *Pull Request* so that I can save it on the **class** repository.  This is what I will grade.  A Pull Request tells someone "Hey, I've taken your repository and done something cool with it that I think you should use."
 
 The repository is now on your github account but it isn’t on you computer.  The first time only, you need to *clone* it to your computer.
 
@@ -75,9 +80,11 @@ The repository is now on your github account but it isn’t on you computer.  Th
 - Make sure your computer can find git.  type something like `git --version`
 - If you have trouble, then it’s probably the case that git is somewhere unusual on your computer.  Look [here](http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/) for help.  On Windows 8 I had to click `Tools -> Global Options -> Git/SVN` and then tell it where Git ended up.  Here's how I found where git ended up: On the Windows desktop, github created a "git shell"  Open that up, and type: `(get-command git).Path`.  It will return the location of git.exe.  It was a pretty crazy filename.  Enter that filename, and then restart Rstudio.
 
-Once Rstudio can find git, you have to clone your repository on your computer.  You can either do this through Rstudio or through a command line shell.  Both are covered here.  *It is very important that you clone the repository from your github account, and not the repository from the class account*
+## <a name='Clone'>Clone your repository to your computer</a>
 
-For both methods, you will need the "ssh address" of your repository.  From the github webpage for your repository, find on the right where you see the url address.  By default it shows the https address.  *You must use the ssh address* if you are to work in R (which you are).  Change that to the ssh address, and copy the url to your clipboard.
+Once Rstudio can find git, you have to clone your repository on your computer.  You can either do this through Rstudio or through a command line shell.  Both are covered here.  **It is very important that you clone the repository from your github account, and not the repository from the class account**
+
+For both methods, you will need the "ssh address" of your repository.  From the github webpage for your repository, find on the right where you see the url address.  By default it shows the https address.  **You must use the ssh address** if you are to work in R (which you are).  Change that to the ssh address, and copy the url to your clipboard.
 
 ### Method A: Clone in Rstudio
 - In R, select `File -> New Project… -> Version Control -> Git`
@@ -102,7 +109,7 @@ Select `Create Project.`
 You now have R and Git setup.  yay!!  Give yourself a pat on the back, crack your knuckles and we can get started with the assignment :)
 
 
- ## Homework 0:
+ ## <a name='homework-0'>Homework 0:</a>
  
  Edit your README.md file and write a short bio about yourself.  You can edit it from within R, or using any text editor (like notepad or textedit).  Tell me a bit about your background.  Maybe something about your academic and career goals?  Maybe something memorable about you?  Maybe you love to write haiku?  It’s your space.  Do with it as you wish.
 
@@ -128,7 +135,7 @@ You now have R and Git setup.  yay!!  Give yourself a pat on the back, crack you
  - Enter `git push`  (If that doesn't work try `git push origin master`, and enter your username and password if prompted)
 
 
- ### Turn it in
+ ## <a name='turn-it-in'>Turn it in usng a pull request</a>
  
  - When you’re ready to turn your homework in, then go to your own github repository online.  Make sure it is up to date.  (Have you pushed everything from your computer?)
  - On the right, click `Pull Requests` -> `Create  pull request.`  
