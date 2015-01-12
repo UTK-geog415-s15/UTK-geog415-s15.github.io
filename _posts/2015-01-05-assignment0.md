@@ -18,7 +18,7 @@ This tutorial is liberally adapted from the one [here](http://stat545-ubc.github
  - [Setting up your class workspace](#setting-up-workspace)
  - [Clone your repository to your computer](#clone)
  - [Homework 0](#homework-0)
- - [Turn it in usng a pull request](#turn-it-in)
+ - [Turn it in using a pull request](#turn-it-in)
 
 
 
