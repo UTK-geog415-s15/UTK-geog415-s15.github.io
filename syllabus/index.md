@@ -16,7 +16,7 @@ Jan 12 | *Lab 0: Intro to R, Rstudio and Git* |
 Jan 13 | How a statistician views the world  |
 Jan 15 | Distributions | 3;4
 Jan 19 | *MLK: No lab* |
-Jan 20 | Means, variances and all that | 2
+<a href="lectures/Mean_Variance_01_20_2015.pdf">Jan 20</a> | Means, variances and all that | 2
 Jan 22 | Models & estimation |
 Jan 26 | *Lab 1: More R intro & Fun with ggplot* |
 Jan 27 |  Correlation and Bivariate Regression | 7
@@ -51,6 +51,6 @@ Apr 9 | |
 Apr 13 | *Lab 9: Time Series* |
 Apr 14 | Spatial Autocorrelation |
 Apr 16 | |
-Apr 20 | *Lab 10: Moran's I and Spatial Autocorrelation |
+Apr 20 | *Lab 10: Moran's I and Spatial Autocorrelation* |
 Apr 21 | AAG |
 Apr 23 | AAG |
