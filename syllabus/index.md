@@ -19,7 +19,7 @@ Jan 19 | *MLK: No lab* |
 <a href="../lectures/Mean_Variance_01_20_2015.pdf">Jan 20</a> | Means, variances and all that | 2
 Jan 22 | Models & estimation |
 <a href="https://www.dropbox.com/sh/dmzdjs51wmih3fr/AAAetSSQe05YM26FegxVE7Pqa?dl=0">Jan 26</a> | *Lab 1: More R intro & Fun with ggplot* |
-Jan 27 |  Correlation and Bivariate Regression | 7
+<a href="../lectures/Correlation_01_27_2015.pdf">Jan 27</a> |  Correlation and Bivariate Regression | 7
 Jan 29 | More Bivariate Regression | 8
 Feb 2 | *Lab: Bivariate Regression* |
 Feb 3 |  More regression|
